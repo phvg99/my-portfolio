@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "dev:clean": "node scripts/clean-port.js && next dev -p 3000"
+    "dev:clean": "node scripts/clean-port.js && next dev -p 3000",
+    "deploy": "next build && touch out/.nojekyll",
+    "setup-github": "node scripts/setup-github.js"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.6",
