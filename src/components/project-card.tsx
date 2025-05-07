@@ -13,6 +13,7 @@ import Link from "next/link";
 import Markdown from "react-markdown";
 import { useInView } from "react-intersection-observer";
 import { useState } from "react";
+import { getImagePath } from "@/lib/utils";
 
 interface Props {
   title: string;
@@ -83,9 +84,9 @@ export function ProjectCard({
           </div>
         )}
         {image && !video && inView && (
-          <div className="h-60 md:h-72 lg:h-80 w-full overflow-hidden">
+          <div className="relative w-full aspect-video overflow-hidden rounded-t-lg">
             <Image
-              src={image}
+              src={getImagePath(image)}
               alt={title}
               width={1200}
               height={675}

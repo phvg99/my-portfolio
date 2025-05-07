@@ -2,6 +2,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 import Link from "next/link";
+import { getImagePath } from "@/lib/utils";
 
 interface Props {
   title: string;
@@ -31,7 +32,7 @@ export function HackathonCard({
           {image ? (
             <div className="relative overflow-hidden size-12 rounded-full">
               <Image
-                src={image}
+                src={getImagePath(image)}
                 alt={title}
                 width={48}
                 height={48}

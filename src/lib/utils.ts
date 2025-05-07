@@ -5,33 +5,26 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export function formatDate(date: string) {
-  let currentDate = new Date().getTime();
-  if (!date.includes("T")) {
-    date = `${date}T00:00:00`;
-  }
-  let targetDate = new Date(date).getTime();
-  let timeDifference = Math.abs(currentDate - targetDate);
-  let daysAgo = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-
-  let fullDate = new Date(date).toLocaleString("en-us", {
+export function formatDate(date: string): string {
+  return new Date(date).toLocaleDateString("en-US", {
     month: "long",
     day: "numeric",
     year: "numeric",
   });
+}
 
-  if (daysAgo < 1) {
-    return "Today";
-  } else if (daysAgo < 7) {
-    return `${fullDate} (${daysAgo}d ago)`;
-  } else if (daysAgo < 30) {
-    const weeksAgo = Math.floor(daysAgo / 7);
-    return `${fullDate} (${weeksAgo}w ago)`;
-  } else if (daysAgo < 365) {
-    const monthsAgo = Math.floor(daysAgo / 30);
-    return `${fullDate} (${monthsAgo}mo ago)`;
-  } else {
-    const yearsAgo = Math.floor(daysAgo / 365);
-    return `${fullDate} (${yearsAgo}y ago)`;
+// Function to get the correct image URL with basePath for GitHub Pages
+export function getImagePath(path: string): string {
+  // The basePath set in next.config.mjs
+  const basePath = process.env.NODE_ENV === 'production' 
+    ? process.env.NEXT_PUBLIC_BASE_PATH ? `/${process.env.NEXT_PUBLIC_BASE_PATH}` : '' 
+    : '';
+    
+  // If the path already includes the basePath or is a remote URL, return as is
+  if (path.startsWith('http') || path.startsWith(basePath)) {
+    return path;
   }
+  
+  // Otherwise, prepend the basePath
+  return `${basePath}${path}`;
 }

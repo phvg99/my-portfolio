@@ -9,6 +9,7 @@ import { ChevronRightIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { getImagePath } from "@/lib/utils";
 
 interface ResumeCardProps {
   logoUrl: string;
@@ -62,22 +63,17 @@ export const ResumeCard = ({
           <Avatar className="size-12 m-auto">
             {logoUrl.endsWith('.svg') ? (
               <AvatarImage
-                src={logoUrl}
+                src={getImagePath(logoUrl)}
                 alt={altText}
-                className="object-contain"
-                loading="lazy"
               />
             ) : (
-              <div className="relative overflow-hidden size-12 rounded-full">
-                <Image
-                  src={logoUrl}
-                  alt={altText}
-                  width={48}
-                  height={48}
-                  className="object-contain"
-                  loading="lazy"
-                />
-              </div>
+              <Image
+                src={getImagePath(logoUrl)}
+                alt={altText}
+                width={40}
+                height={40}
+                className="rounded-full object-cover"
+              />
             )}
             <AvatarFallback>{altText[0]}</AvatarFallback>
           </Avatar>
