@@ -31,7 +31,7 @@ const BlurFade = ({
   const ref = useRef(null);
   const inViewResult = useInView(ref, { 
     once: true, 
-    margin: inViewMargin,
+    margin: inViewMargin as any,
     amount: 0.1
   });
   const isInView = !inView || inViewResult;
