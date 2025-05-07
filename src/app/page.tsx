@@ -10,9 +10,6 @@ import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
 
-// Implement as client component for intersection observer
-export const runtime = "edge";
-
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
