@@ -208,21 +208,22 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Asana Color System",
-      href: "https://www.notion.so/pedrohgarcia/Asana-Cores-de-Sistema-e-Acessibilidade-737afe524ec9440d874ad529b5c81d30",
-      dates: "August 2022 - October 2022",
+      title: "Steam Case Study",
+      href: "https://pedrohgarcia.notion.site/An-lise-de-Interface-Steam-PT-BR-106072a195348083a47fe08dd5875039",
+      dates: "2024",
       active: false,
       description:
-        "A comprehensive color system study for Asana, focusing on accessibility and visual hierarchy.",
+        "A short interface analysis of the Steam platform, developed for a UX Designer selection process I participated in during 2024.",
       technologies: [
-        "Color Theory",
-        "Accessibility",
-        "Design Systems",
-        "Usability Testing",
-        "Documentation"
+        "UX Case Study",
+        "Interface Analysis",
+        "Interaction Design",
+        "User Flows",
+        "Information Architecture",
+        "Process Documentation"
       ],
       links: [],
-      image: "/images/projects/color-system.png",
+      image: "/images/projects/Steam Case study thumbnail2.png",
       video: "",
     },
     {
@@ -244,17 +245,17 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Design System Starter Kit",
-      href: "https://pedrohgarcia.notion.site",
-      dates: "2024",
+      title: "Asana Color System",
+      href: "https://www.notion.so/pedrohgarcia/Asana-Cores-de-Sistema-e-Acessibilidade-737afe524ec9440d874ad529b5c81d30",
+      dates: "August 2022 - October 2022",
       active: false,
       description:
-        "Reusable design system starter kit for rapid UI development and consistent UX across projects.",
+        "A comprehensive color system study for Asana, focusing on accessibility and visual hierarchy.",
       technologies: [
+        "Color Theory",
+        "Accessibility",
         "Design Systems",
-        "Component Design",
-        "Design Tokens",
-        "Figma",
+        "Usability Testing",
         "Documentation"
       ],
       links: [],
