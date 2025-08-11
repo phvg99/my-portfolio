@@ -98,7 +98,7 @@ export const DATA = {
       title: "UX/UI Designer",
       logoUrl: "/innoscience-logo.svg",
       start: "October 2024",
-      end: "Present",
+      end: "May 2025",
       description:
         "Designed interfaces for web apps and an innovation platform, creating UI libraries, style guides, and design systems to streamline workflows. Partnered with developers and product managers to ensure cohesive, user-focused experiences.",
     },
@@ -241,6 +241,24 @@ export const DATA = {
       ],
       links: [],
       image: "/images/projects/consultoria-financeira.png",
+      video: "",
+    },
+    {
+      title: "Design System Starter Kit",
+      href: "https://pedrohgarcia.notion.site",
+      dates: "2024",
+      active: false,
+      description:
+        "Reusable design system starter kit for rapid UI development and consistent UX across projects.",
+      technologies: [
+        "Design Systems",
+        "Component Design",
+        "Design Tokens",
+        "Figma",
+        "Documentation"
+      ],
+      links: [],
+      image: "/images/projects/color-system.png",
       video: "",
     },
   ],
