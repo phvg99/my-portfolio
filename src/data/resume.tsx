@@ -223,7 +223,7 @@ export const DATA = {
         "Process Documentation"
       ],
       links: [],
-      image: "/images/projects/Steam Case study thumbnail2.png",
+      image: "/images/projects/steam tumbnail.png",
       video: "",
     },
     {
