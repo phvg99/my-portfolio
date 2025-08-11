@@ -164,7 +164,7 @@ export const DATA = {
       dates: "October 2024 - Present",
       active: true,
       description:
-        "A collection of digital products and design system work delivered for Innoscience Consultoria. Includes UI libraries, innovation platforms, and user-focused web applications.",
+        "This is a collection of my work at Innoscience.",
       technologies: [
         "UI Libraries",
         "Design Systems",
