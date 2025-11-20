@@ -1,6 +1,12 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 
+const BASE_PATH =
+  process.env.NEXT_PUBLIC_BASE_PATH && process.env.NEXT_PUBLIC_BASE_PATH.length > 0
+    ? `/${process.env.NEXT_PUBLIC_BASE_PATH}`
+    : "";
+const withBasePath = (path: string) => `${BASE_PATH}${path}`;
+
 export const DATA = {
   name: "Pedro Henrique Garcia",
   initials: "PHG",
@@ -11,7 +17,7 @@ export const DATA = {
     "UX/UI Designer specializing in design systems and user-centered solutions. Creating intuitive digital experiences that solve real problems.",
   summary:
     "With over 4 years of experience in UX/UI design, I've helped companies build better digital products through thoughtful design systems and user-centered approaches. My expertise includes creating intuitive interfaces, conducting user research, and collaborating closely with development teams to ensure seamless implementation.",
-  avatarUrl: "/me.png",
+  avatarUrl: withBasePath("/me.png"),
   skills: [
     "UI Design",
     "UX Research",
@@ -31,15 +37,15 @@ export const DATA = {
   companyLogos: [
     {
       name: "Singu",
-      logoUrl: "/singu-logo.svg",
+      logoUrl: withBasePath("/singu-logo.svg"),
     },
     {
       name: "b/luz Advogados",
-      logoUrl: "/bluz-logo.svg",
+      logoUrl: withBasePath("/bluz-logo.svg"),
     },
     {
       name: "Innoscience Consultoria",
-      logoUrl: "/innoscience-logo.svg",
+      logoUrl: withBasePath("/innoscience-logo.svg"),
     },
   ],
   contact: {
@@ -86,7 +92,7 @@ export const DATA = {
       badges: [],
       location: "Remote",
       title: "Junior Product Designer",
-      logoUrl: "/singu-logo.svg",
+      logoUrl: withBasePath("/singu-logo.svg"),
       start: "November 2020",
       end: "July 2022",
       yearRange: "2020-2022",
@@ -100,7 +106,7 @@ export const DATA = {
       href: "https://bluz.com",
       location: "Remote",
       title: "Junior UX/UI Designer",
-      logoUrl: "/bluz-logo.svg",
+      logoUrl: withBasePath("/bluz-logo.svg"),
       start: "August 2022",
       end: "January 2024",
       yearRange: "2022-2024",
@@ -114,7 +120,7 @@ export const DATA = {
       badges: [],
       location: "São Paulo, Brazil",
       title: "UX/UI Designer",
-      logoUrl: "/innoscience-logo.svg",
+      logoUrl: withBasePath("/innoscience-logo.svg"),
       start: "October 2024",
       end: "May 2025",
       yearRange: "2024-2025",
@@ -128,7 +134,7 @@ export const DATA = {
       school: "Buildspace",
       href: "https://buildspace.so",
       degree: "s3, s4, sf1, s5",
-      logoUrl: "/buildspace.jpg",
+      logoUrl: withBasePath("/buildspace.jpg"),
       start: "2023",
       end: "2024",
     },
@@ -136,7 +142,7 @@ export const DATA = {
       school: "University of Waterloo",
       href: "https://uwaterloo.ca",
       degree: "Bachelor's Degree of Computer Science (BCS)",
-      logoUrl: "/waterloo.png",
+      logoUrl: withBasePath("/waterloo.png"),
       start: "2016",
       end: "2021",
     },
@@ -144,7 +150,7 @@ export const DATA = {
       school: "Wilfrid Laurier University",
       href: "https://wlu.ca",
       degree: "Bachelor's Degree of Business Administration (BBA)",
-      logoUrl: "/laurier.png",
+      logoUrl: withBasePath("/laurier.png"),
       start: "2016",
       end: "2021",
     },
@@ -152,7 +158,7 @@ export const DATA = {
       school: "International Baccalaureate",
       href: "https://ibo.org",
       degree: "IB Diploma",
-      logoUrl: "/ib.png",
+      logoUrl: withBasePath("/ib.png"),
       start: "2012",
       end: "2016",
     },
@@ -174,7 +180,7 @@ export const DATA = {
         "Prototyping"
       ],
       links: [],
-      image: "/images/projects/juntos.png",
+      image: withBasePath("/images/projects/juntos.png"),
       video: "",
     },
 
@@ -200,7 +206,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/images/projects/Innoscience.png",
+      image: withBasePath("/images/projects/Innoscience.png"),
       video: "",
     },
     {
@@ -224,7 +230,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/images/projects/bluz-design-system.png",
+      image: withBasePath("/images/projects/bluz-design-system.png"),
       video: "",
     },
   ],
@@ -617,42 +623,42 @@ export const DATA = {
     {
       name: "Douglas Junior",
       title: "Head of Design",
-      image: "/images/recommendations/douglas-junior.jpg",
+      image: withBasePath("/images/recommendations/douglas-junior.jpg"),
       text:
         "I had the pleasure of leading Pedro, during this period, he demonstrated remarkable skills and an exceptional commitment to excellence in product design. Under my leadership, he stood out as a dedicated and proactive team member. His ability to quickly understand the complexities of projects and translate them into creative solutions was impressive. He always showed a notable commitment to quality and innovation. Beyond his technical skills, he was a key piece in promoting a culture of collaboration and efficiency. His willingness to collaborate and share knowledge significantly contributed to the team's success. I recommend him as a talented Product Design professional. His tireless work ethic, technical skills, and collaborative approach make him a valuable addition to any team.",
     },
     {
       name: "Alex Minoru Abe",
       title: "Product Designer & Developer",
-      image: "/images/recommendations/alex-minoru-abe.jpg",
+      image: withBasePath("/images/recommendations/alex-minoru-abe.jpg"),
       text:
         "Pedro excels at UI/UX, has a keen eye for details, masters Figma well, and always proposes solutions thinking about the real user experience. It's not just about making it look good, it's about making it work well from end to end. Beyond the technical side, he also has a very collaborative attitude, communicates well with the team, and is always available to exchange ideas, review something together, or help in other project fronts when necessary. He's the type of designer you want to have around on the team: reliable, creative, and delivers with quality.",
     },
     {
       name: "José Marcolino",
       title: "UX Researcher",
-      image: "/images/recommendations/jose-marcolino.jpg",
+      image: withBasePath("/images/recommendations/jose-marcolino.jpg"),
       text:
         "Pedro was a professional I had the pleasure of working with at Singu. Always bringing a very contagious energy and good vibes to the team. He was always dedicated to the projects he took on and delivered excellent work. I'm sure he will increasingly become a great Designer to have as a teammate!",
     },
     {
       name: "Renan Rocha",
       title: "Developer",
-      image: "/images/recommendations/renan-rocha.jpg",
+      image: withBasePath("/images/recommendations/renan-rocha.jpg"),
       text:
         "I had the opportunity to work with Pedro, who took on the design of our product. In Figma, he created clear and consistent screens, structured the complete design system (colors, typography, components, and states), and kept everything well documented for the team. Always collaborative, he helped us devs transform requirements into interfaces that are simple to use and easy to develop. Organized, attentive to details, and ready to adjust every pixel to deliver the best experience.",
     },
     {
       name: "Richard de Souza",
       title: "Developer",
-      image: "/images/recommendations/richard-de-souza.jpg",
+      image: withBasePath("/images/recommendations/richard-de-souza.jpg"),
       text:
         "I had the pleasure of working with Pedro and I can say with confidence that he is someone you'll want on the team, not only for the quality of work but also for his dedication and proactivity. He constantly brings new perspectives to discussions and was responsible for developing complex flows from scratch with great competence. Always receptive to feedback and with an open stance toward evolution, Pedro contributed consistently to the quality of the products we delivered together.",
     },
     {
       name: "Marcelo Antonietto",
       title: "Lead Product Designer",
-      image: "/images/recommendations/marcelo-antonietto.jpg",
+      image: withBasePath("/images/recommendations/marcelo-antonietto.jpg"),
       text:
         "I had the opportunity to work with Pedro at Singu, and he is a talented and dedicated Product Designer. He approaches problems with curiosity, designs with clarity, and always keeps the user's real context in mind. Pedro is collaborative, open to feedback, and contributes to a positive, solution-oriented environment. I truly appreciated our partnership and would be glad to work with him again.",
     },
