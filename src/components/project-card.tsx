@@ -1,6 +1,5 @@
 "use client";
 
-import { Badge } from "@/components/ui/badge";
 import {
   Card,
   CardContent,
@@ -19,7 +18,6 @@ interface Props {
   title: string;
   href?: string;
   description: string;
-  tags: readonly string[];
   link?: string;
   image?: string;
   video?: string;
@@ -35,7 +33,6 @@ export function ProjectCard({
   title,
   href,
   description,
-  tags,
   link,
   image,
   video,
@@ -108,20 +105,6 @@ export function ProjectCard({
         </div>
       </CardHeader>
       <CardContent className="mt-auto flex flex-col gap-4 px-6 pb-6">
-        {tags && tags.length > 0 && (
-          <div className="flex flex-wrap gap-1.5">
-            {tags?.map((tag) => (
-              <Badge
-                className="px-2 py-0.5 text-xs"
-                variant="secondary"
-                key={tag}
-              >
-                {tag}
-              </Badge>
-            ))}
-          </div>
-        )}
-        
         {href && (
           <div className="flex flex-wrap items-center gap-2 mt-3">
             <Link 

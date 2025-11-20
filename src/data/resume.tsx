@@ -28,6 +28,20 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
   ],
+  companyLogos: [
+    {
+      name: "Singu",
+      logoUrl: "/singu-logo.svg",
+    },
+    {
+      name: "b/luz Advogados",
+      logoUrl: "/bluz-logo.svg",
+    },
+    {
+      name: "Innoscience Consultoria",
+      logoUrl: "/innoscience-logo.svg",
+    },
+  ],
   contact: {
     email: "hello@example.com",
     tel: "+123456789",
@@ -75,20 +89,24 @@ export const DATA = {
       logoUrl: "/singu-logo.svg",
       start: "November 2020",
       end: "July 2022",
+      yearRange: "2020-2022",
+      period: "November 2020 - July 2022",
       description:
-        "Contributed to the design of mobile experiences. During my time at the company, I structured a comprehensive design system, enhancing color hierarchy, typography, templates, and visual assets. Through user research and prototyping tests, I crafted intuitive interfaces and played a role in the creation and development of features across both applications.",
+        "Responsible for creating and implementing the Design System for two different platforms (iOS/Android), ensuring visual standardization and efficiency for multiple design and development teams.\n\nDelivered high-fidelity interfaces and prototypes, conducted usability research and testing, maintaining an agile and consistent pace in a startup environment. Promoted from intern to junior designer in just six months, reflecting the quality and impact of deliverables.",
     },
     {
       company: "b/luz Advogados",
       badges: [],
       href: "https://bluz.com",
       location: "Remote",
-      title: "UX/UI Designer",
+      title: "Junior UX/UI Designer",
       logoUrl: "/bluz-logo.svg",
       start: "August 2022",
       end: "January 2024",
+      yearRange: "2022-2024",
+      period: "August 2022 - January 2024",
       description:
-        "Involved in the creative process of projects, including the creation and validation of flowcharts and high-fidelity prototypes. Developed a design system that improved consistency and accelerated the delivery of high-quality solutions. Analyzed research data and mapped complex user journeys, applying design expertise to the legal field and its specific processes.",
+        "Created the b/luz Design System using Atomic Design methodology to ensure consistency, efficiency, and a solid visual identity across all products and deliverables.\n\nResponsible for creating maps, flowcharts, prototypes, and interfaces focused on making the legal experience simple and intuitive for clients.\n\nLed usability research, usability testing, and heuristic evaluations, generating insights to guide design decisions and improve user experience.",
     },
     {
       company: "Innoscience Consultoria",
@@ -99,8 +117,10 @@ export const DATA = {
       logoUrl: "/innoscience-logo.svg",
       start: "October 2024",
       end: "May 2025",
+      yearRange: "2024-2025",
+      period: "October 2024 - May 2025",
       description:
-        "Designed interfaces for web apps and an innovation platform, creating UI libraries, style guides, and design systems to streamline workflows. Partnered with developers and product managers to ensure cohesive, user-focused experiences.",
+        "Responsible for designing new features, improving navigation flows, and evolving the InnoUP platform.\n\nCreated AI-driven experiences, designing intelligent interactions and journeys that integrate AI naturally into platform usage.\n\nDrove platform growth through multimedia content production and led complete interface and experience redesign projects, achieving 98% internal approval from the technology team.",
     },
   ],
   education: [
@@ -205,61 +225,6 @@ export const DATA = {
         },
       ],
       image: "/images/projects/bluz-design-system.png",
-      video: "",
-    },
-    {
-      title: "Steam Case Study",
-      href: "https://pedrohgarcia.notion.site/An-lise-de-Interface-Steam-PT-BR-106072a195348083a47fe08dd5875039",
-      dates: "2024",
-      active: false,
-      description:
-        "A short interface analysis of the Steam platform, developed for a UX Designer selection process I participated in during 2024.",
-      technologies: [
-        "UX Case Study",
-        "Interface Analysis",
-        "Interaction Design",
-        "User Flows",
-        "Information Architecture",
-        "Process Documentation"
-      ],
-      links: [],
-      image: "/images/projects/steam tumbnail.png",
-      video: "",
-    },
-    {
-      title: "Financial Consulting Platform",
-      href: "https://www.notion.so/pedrohgarcia/Plataforma-de-Consultoria-Financeira-6f47410ecea34fdd8ee2b405adc4bd65",
-      dates: "January 2023 - March 2023",
-      active: true,
-      description:
-        "A platform designed to simplify financial decisions and help users achieve sustainable prosperity.",
-      technologies: [
-        "UI Design", 
-        "Data Visualization",
-        "Responsive Design",
-        "Interactive Prototyping",
-        "User Research"
-      ],
-      links: [],
-      image: "/images/projects/consultoria-financeira.png",
-      video: "",
-    },
-    {
-      title: "Asana Color System",
-      href: "https://www.notion.so/pedrohgarcia/Asana-Cores-de-Sistema-e-Acessibilidade-737afe524ec9440d874ad529b5c81d30",
-      dates: "August 2022 - October 2022",
-      active: false,
-      description:
-        "A comprehensive color system study for Asana, focusing on accessibility and visual hierarchy.",
-      technologies: [
-        "Color Theory",
-        "Accessibility",
-        "Design Systems",
-        "Usability Testing",
-        "Documentation"
-      ],
-      links: [],
-      image: "/images/projects/color-system.png",
       video: "",
     },
   ],
@@ -646,6 +611,50 @@ export const DATA = {
           href: "https://github.com/UWPortalSDK/crowmark",
         },
       ],
+    },
+  ],
+  recommendations: [
+    {
+      name: "Douglas Junior",
+      title: "Head of Design",
+      image: "/images/recommendations/douglas-junior.jpg",
+      text:
+        "I had the pleasure of leading Pedro, during this period, he demonstrated remarkable skills and an exceptional commitment to excellence in product design. Under my leadership, he stood out as a dedicated and proactive team member. His ability to quickly understand the complexities of projects and translate them into creative solutions was impressive. He always showed a notable commitment to quality and innovation. Beyond his technical skills, he was a key piece in promoting a culture of collaboration and efficiency. His willingness to collaborate and share knowledge significantly contributed to the team's success. I recommend him as a talented Product Design professional. His tireless work ethic, technical skills, and collaborative approach make him a valuable addition to any team.",
+    },
+    {
+      name: "Alex Minoru Abe",
+      title: "Product Designer & Developer",
+      image: "/images/recommendations/alex-minoru-abe.jpg",
+      text:
+        "Pedro excels at UI/UX, has a keen eye for details, masters Figma well, and always proposes solutions thinking about the real user experience. It's not just about making it look good, it's about making it work well from end to end. Beyond the technical side, he also has a very collaborative attitude, communicates well with the team, and is always available to exchange ideas, review something together, or help in other project fronts when necessary. He's the type of designer you want to have around on the team: reliable, creative, and delivers with quality.",
+    },
+    {
+      name: "José Marcolino",
+      title: "UX Researcher",
+      image: "/images/recommendations/jose-marcolino.jpg",
+      text:
+        "Pedro was a professional I had the pleasure of working with at Singu. Always bringing a very contagious energy and good vibes to the team. He was always dedicated to the projects he took on and delivered excellent work. I'm sure he will increasingly become a great Designer to have as a teammate!",
+    },
+    {
+      name: "Renan Rocha",
+      title: "Developer",
+      image: "/images/recommendations/renan-rocha.jpg",
+      text:
+        "I had the opportunity to work with Pedro, who took on the design of our product. In Figma, he created clear and consistent screens, structured the complete design system (colors, typography, components, and states), and kept everything well documented for the team. Always collaborative, he helped us devs transform requirements into interfaces that are simple to use and easy to develop. Organized, attentive to details, and ready to adjust every pixel to deliver the best experience.",
+    },
+    {
+      name: "Richard de Souza",
+      title: "Developer",
+      image: "/images/recommendations/richard-de-souza.jpg",
+      text:
+        "I had the pleasure of working with Pedro and I can say with confidence that he is someone you'll want on the team, not only for the quality of work but also for his dedication and proactivity. He constantly brings new perspectives to discussions and was responsible for developing complex flows from scratch with great competence. Always receptive to feedback and with an open stance toward evolution, Pedro contributed consistently to the quality of the products we delivered together.",
+    },
+    {
+      name: "Marcelo Antonietto",
+      title: "Lead Product Designer",
+      image: "/images/recommendations/marcelo-antonietto.jpg",
+      text:
+        "I had the opportunity to work with Pedro at Singu, and he is a talented and dedicated Product Designer. He approaches problems with curiosity, designs with clarity, and always keeps the user's real context in mind. Pedro is collaborative, open to feedback, and contributes to a positive, solution-oriented environment. I truly appreciated our partnership and would be glad to work with him again.",
     },
   ],
 } as const;
